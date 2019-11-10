@@ -172,7 +172,9 @@ class Stationn extends Component {
             return (
                 <div>
                     <SearchSuggest weatherStations={this.state.weatherStations} />
+                    <div className="text-center display-3">{placeName}</div>
                     <div className='container tenperature'>
+                        
                         <div className="icon_tenperature"><i className="wi wi-thermometer icon_size"></i></div>
                         <div className="data_temperature">{stationData.temperature}°C</div>
                     </div>
@@ -235,7 +237,7 @@ class Stationn extends Component {
                         </div>
                         <div className='time_and_location'>
                             <div><strong><i className="wi wi-time-2 time_icon"></i>{Unix_timestamp(stationData.timestamp)}</strong></div>
-                            <div>{placeName}</div>
+                           
                             <center><Link to="/">Return to Home Page</Link></center>
                         </div>
                     </div>           

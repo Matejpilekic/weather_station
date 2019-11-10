@@ -69,7 +69,7 @@ class Home extends Component {
             return (
               <React.Fragment>
                 <div className='container-fluid home'>
-                    <div className='search_title'>Show me the weather in... city, or name</div>
+                    <div className='search_title'>Meteostation WebApp</div>
                     <SearchSuggest weatherStations={this.state.weatherStations}/>
                     <div className="map">
                   <Maps stations={this.state.weatherStations}/>
